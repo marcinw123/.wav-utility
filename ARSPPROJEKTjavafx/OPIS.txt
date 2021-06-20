@@ -1,0 +1,11 @@
+Przed:
+- Aplikacja terminalowa
+- Wyszukuje pliki z rozszerzeniem .wav w folderze z projektem
+- Po wpisaniu komendy przez użytkownika następowało zastosowanie algorytmu normalizacji głośności na wszystkich znalezionych plikach .wav
+
+Po:
+- Aplikacja z interfejsem graficznym
+- Wskazywanie dowolnego folderu na dysku celem przeszukania plików z rozszerzeniem .wav
+- Wyświetlanie komunikatów w polu tekstowym, w tym znalezionych plików
+- 4 algorytmy modyfikujące plik audio: normalizacja głośności (ten sam co ostatnio), odwrócenie polaryzacji, zamiana obrazu stereo, monofonizowanie audio
+- Dodatkowy przycisk do wyświetlania okna z prezentacją wszystkich algorytmów w akcji

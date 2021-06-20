@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPaneFromMainWindowId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainWindowLayoutController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="157.0" prefWidth="157.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="373.0" minHeight="10.0" prefHeight="370.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <Button mnemonicParsing="false" onAction="#chooseFolderButtonHandler" text="Choose folder" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+   <TextField fx:id="folderPathTextField" editable="false" promptText="path to folder with .wav files" GridPane.columnIndex="1">
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+   </TextField>
+
+
+  <ToolBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="370.0" prefWidth="178.0" scaleShape="false" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+    <items>
+        <Button mnemonicParsing="false" onAction="#searchForWavFilesButtonHandler" prefHeight="25.0" prefWidth="150.0" text="Search for .wav files" />
+        <Separator prefHeight="15.0" prefWidth="150.0" />
+        <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#normalizeVolumeButtonHandler" prefHeight="25.0" prefWidth="150.0" text="Normalize volume" />
+        <Button layoutX="66.0" layoutY="13.0" mnemonicParsing="false" onAction="#invertPolarityButtonHandler" prefHeight="25.0" prefWidth="150.0" text="Invert polarity" />
+        <Button layoutX="122.0" layoutY="13.0" mnemonicParsing="false" onAction="#swapStereoButtonHandler" prefHeight="25.0" prefWidth="150.0" text="Swap stereo" />
+        <Button mnemonicParsing="false" onAction="#monophonizeButtonHandler" prefHeight="25.0" prefWidth="150.0" text="Monophonize audio" />
+        <Separator prefHeight="15.0" prefWidth="150.0" />
+        <Button layoutX="10.0" layoutY="143.0" mnemonicParsing="false" onAction="#helpButtonHandler" prefHeight="25.0" prefWidth="150.0" text="Help" />
+    </items>
+  </ToolBar>
+   <TextArea fx:id="textAreaForMessages" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="messages will appear here..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+
+</GridPane>

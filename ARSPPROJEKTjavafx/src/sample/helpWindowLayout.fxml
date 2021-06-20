@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridPaneFromHelpWindowId" fx:controller="sample.HelpWindowLayoutController" maxHeight="860.0" maxWidth="720.0" minHeight="860.0" minWidth="720.0" prefHeight="860.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="160.0" minHeight="160.0" prefHeight="160.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="160.0" minHeight="160.0" prefHeight="160.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="160.0" minHeight="160.0" prefHeight="160.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="160.0" minHeight="160.0" prefHeight="160.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label prefHeight="17.0" prefWidth="112.0" text="Normalize volume:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label prefHeight="44.0" prefWidth="715.0" text="Audio normalization is the application of a constant amount of gain to an audio recording to bring the amplitude to a target level (the norm). In our case, target level is maximum possible value. " wrapText="true" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../javafxImages/normalizeBefore.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin></ImageView>
+      <Label text="before -&gt; after" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="105.0" pickOnBounds="true" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../javafxImages/normalizeAfter.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="112.0" text="Invert polarity:" GridPane.rowIndex="3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label layoutX="10.0" layoutY="24.0" prefHeight="70.0" prefWidth="718.0" text="Any electrical signal has polarity, and it is a reference to the signal’s position or voltage above or below the median line. A device that inverts the polarity of a signal will simply swap positive voltage to negative voltage and vice versa. " wrapText="true" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="403.0" layoutY="104.0" pickOnBounds="true" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+         <image>
+            <Image url="@../javafxImages/invertPhaseBefore.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label layoutX="272.0" layoutY="171.0" text="before -&gt; after" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="403.0" layoutY="104.0" pickOnBounds="true" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+         <image>
+            <Image url="@../javafxImages/invertPhaseAfter.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="20.0" prefHeight="17.0" prefWidth="112.0" text="Swap stereo:" GridPane.rowIndex="6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label layoutX="20.0" layoutY="298.0" prefHeight="17.0" prefWidth="716.0" text="Flip the stereo image - left channel becomes right and right becomes left." wrapText="true" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="297.0" pickOnBounds="true" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+         <image>
+            <Image url="@../javafxImages/swapStereoBefore.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label layoutX="280.0" layoutY="335.0" text="before -&gt; after" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="-52.0" pickOnBounds="true" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+         <image>
+            <Image url="@../javafxImages/swapStereoAfter.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="411.0" prefHeight="17.0" prefWidth="151.0" text="Monophonize audio:" GridPane.rowIndex="9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label layoutX="20.0" layoutY="425.0" prefHeight="17.0" prefWidth="715.0" text="Sum both channels into one, making the audio playing only in the middle of stereo field." wrapText="true" GridPane.rowIndex="10">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="475.0" pickOnBounds="true" GridPane.halignment="LEFT" GridPane.rowIndex="11">
+         <image>
+            <Image url="@../javafxImages/monophonizeBefore.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label layoutX="280.0" layoutY="541.0" text="before -&gt; after" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="475.0" pickOnBounds="true" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+         <image>
+            <Image url="@../javafxImages/monophonizeAfter.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Button mnemonicParsing="false" onAction="#closeThisWindowButtonHandler" text="Close" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+   </children>
+</GridPane>
